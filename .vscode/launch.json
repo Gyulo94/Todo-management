@@ -1,0 +1,28 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "PasswordEncoderImpl",
+      "request": "launch",
+      "mainClass": "com.gyulo94.todo.utils.PasswordEncoderImpl",
+      "projectName": "todo-management"
+    },
+    {
+      "type": "java",
+      "name": "TodoManagementApplication",
+      "request": "launch",
+      "mainClass": "com.gyulo94.todo.TodoManagementApplication",
+      "projectName": "todo-management"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-TodoManagementApplication<server>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.gyulo94.todo.TodoManagementApplication",
+      "projectName": "server",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}
