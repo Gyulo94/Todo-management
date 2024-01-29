@@ -21,9 +21,14 @@ export default function Login() {
 
         // const token = "Basic " + window.btoa(username + ":" + password);
         const token = "Bearer " + res.data.accessToken;
+
+        const role = res.data.role;
+
         storeToken(token);
-        saveLoggedInUser(username);
+
+        saveLoggedInUser(username, role);
         navigator("/todos");
+
         window.location.reload(false);
       })
       .catch((err) => console.error(err));

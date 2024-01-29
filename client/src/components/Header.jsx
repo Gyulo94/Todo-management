@@ -18,7 +18,7 @@ export default function Header() {
         <nav className="navbar navbar-expand-md navbar-dark bg-dark">
           <div>
             <a href="/" className="navbar-brand">
-              Todo Management Application
+              할 일 관리 어플리케이션
             </a>
           </div>
           <div className="collapse navbar-collapse">
@@ -26,7 +26,7 @@ export default function Header() {
               {isAuth && (
                 <li className="nav-item">
                   <NavLink to="/todos" className="nav-link">
-                    Todos
+                    할 일 목록
                   </NavLink>
                 </li>
               )}
