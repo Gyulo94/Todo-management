@@ -56,7 +56,7 @@ export default function ListTodo() {
 
   return (
     <div className="container">
-      <h2 className="text-center">List of Todos</h2>
+      <h2 className="text-center">할 일 목록</h2>
       {isAdmin && (
         <button className="btn btn-primary mb-2" onClick={addNewTodo}>
           할 일 추가
@@ -84,7 +84,7 @@ export default function ListTodo() {
                       className="btn btn-info"
                       onClick={() => updateTodo(todo.id)}
                     >
-                      Update
+                      수정
                     </button>
                   )}
                   {isAdmin && (
@@ -93,7 +93,7 @@ export default function ListTodo() {
                       onClick={() => removeTodo(todo.id)}
                       style={{ marginLeft: "10px" }}
                     >
-                      Delete
+                      삭제
                     </button>
                   )}
 
@@ -102,14 +102,14 @@ export default function ListTodo() {
                     onClick={() => markCompleteTodo(todo.id)}
                     style={{ marginLeft: "10px" }}
                   >
-                    Complete
+                    완료
                   </button>
                   <button
                     className="btn btn-info"
                     onClick={() => markInCompleteTodo(todo.id)}
                     style={{ marginLeft: "10px" }}
                   >
-                    In Complete
+                    미완료
                   </button>
                 </td>
               </tr>
